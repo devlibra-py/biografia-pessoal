@@ -1,9 +1,28 @@
+/*===============================TAGS===============================*/
+
 html{
-    font-family: 'Open Sans', monospace;
+    font-family: 'Open Sans', sans-serif;
 }
 
+hr{
+    border: 5px dotted #000;
+    border-bottom: none;
+    width: 50%;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+/*=========================CLASSES_HEARDER=========================*/
+
 .container{
-    background-image: url(../img/sky.jpg);
+    background-image: url(../img/fundo.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -14,8 +33,8 @@ html{
 }
 
 .profile-photo{
-    width: 200px;
-    height: 200px;
+    width: 215px;
+    height: 215px;
 }
 
 .container-description{
@@ -32,8 +51,33 @@ html{
 }
 
 .container-description p{
+    font-family: cursive;
     font-weight: bold;
-    font-size: 18px;
-    text-shadow: 1px 1px #000;
-    color: #fff;
+    font-size: 20px;
+}
+
+.section-one, .section-two, .section-tree{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    font-size: 20px;
+}
+
+/*=========================CLASSES_FOOTER==========================*/
+
+.footer-container{
+    background-color: rgba(6, 238, 76, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.8;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.footer-container p{
+    font-size: 16px;
+    font-weight: bold;
 }
